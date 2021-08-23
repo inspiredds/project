@@ -35,4 +35,4 @@ console.log(man["age"]);
 let arr = ["plum.png", "orange.jpg", 7, "apple.bmp", {name: "spyashij"}, []];
 console.log(arr[4]["name"]); */
 
-let name = "Alexandr";
+let myname = "Alexandr";
