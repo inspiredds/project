@@ -8,19 +8,19 @@ const personalMovieDB = {
     privat: false
 };
 
-    for (let i = 0; i < personalMovieDB.count; i++) {
-        const filmTitle = prompt('Один из просмотренных фильмов?', ''),
-            filmValue = prompt('На сколько оцените его?', '');
+for (let i = 0; i < personalMovieDB.count; i++) {
+    const filmTitle = prompt('Один из просмотренных фильмов?',''), 
+            filmValue = prompt('На сколько оцените его?','');
 
-        if (filmTitle.length == 0 || filmValue.length == 0 ||
-            filmTitle.length > 50 || filmValue.length > 50 ||
-            filmTitle == null || filmValue == null) {
-            alert('Неверное название фильма или оценка. Введите еще раз.');
-            i--;
-        } else {
-            personalMovieDB.movies[filmTitle] = filmValue;
-        }
+    if (filmTitle.length == 0 || filmValue.length == 0 || 
+        filmTitle.length > 50 || filmValue.length > 50 || 
+        filmTitle == null || filmValue == null) {
+        alert('Неверное название фильма или оценка. Введите еще раз.');
+        i--;
+    } else {
+        personalMovieDB.movies[filmTitle] = filmValue;
     }
+}
 
 if (personalMovieDB.count < 10) {
     alert('Просмотрено довольно мало фильмов');
